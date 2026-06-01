@@ -1,10 +1,93 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TICS</title>
+    <title>Real Forest | Home</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>TICS</h1>
+    <header class="topbar">
+        <div class="brand">
+            <span class="brand-icon">🌲</span>
+            <span>Real Forest</span>
+        </div>
+        <nav class="main-nav">
+            <a href="index.html" class="active">Home</a>
+            <a href="encyclopedia.html">Enciclopedia</a>
+            <a href="games.html">Games</a>
+            <a href="profile.html">Profile</a>
+        </nav>
+    </header>
+
+    <main class="page home-page">
+        <section class="hero">
+            <div class="hero-copy">
+                <h1>¡Bienvenido a Real Forest!</h1>
+                <p id="welcome-info">Embárcate en una misión educativa para restaurar la biodiversidad. Planta, aprende y protege el ecosistema real mientras juegas.</p>
+                <a id="begin-adventure" class="cta-button">Comenzar aventura</a>
+            </div>
+            <div class="hero-card">
+                <div class="hero-figure"></div>
+            </div>
+        </section>
+
+        <section class="section section-intro">
+            <div class="section-row grid-three">
+                <article class="feature-card card-mint">
+                    <div class="card-image card-image-mint"></div>
+                    <h2>Menta</h2>
+                    <p>Una planta refrescante conocida por sus propiedades digestivas y aroma intenso.</p>
+                    <span class="tag">Medicinal</span>
+                </article>
+                <article class="feature-card card-peach">
+                    <div class="card-image card-image-carrot"></div>
+                    <h2>Zanahoria</h2>
+                    <p>Rica en vitamina A, esta raíz es fundamental para una visión saludable y crecimiento.</p>
+                    <span class="tag">Vegetal</span>
+                </article>
+                <article class="feature-card card-seafoam">
+                    <div class="card-image card-image-sabila"></div>
+                    <h2>Sábila</h2>
+                    <p>Famosa por sus cristales curativos que alivian quemaduras y regeneran la piel.</p>
+                    <span class="tag">Medicinal</span>
+                </article>
+            </div>
+        </section>
+
+        <section class="grid-two">
+            <article class="feature-card card-mint">
+                <h2>Trivia de Hojas</h2>
+                <p>Demuestra cuánto sabes y descubre datos interesantes sobre plantas y bosque.</p>
+                <span class="small-tag">Modo competitivo</span>
+            </article>
+            <article class="feature-card card-peach">
+                <h2>Rescate de Semillas</h2>
+                <p>Recolecta y planta semillas para restaurar la vida en el ecosistema.</p>
+                <span class="small-tag">Modo acción</span>
+            </article>
+        </section>
+
+        <section class="feature-card card-seafoam">
+            <h2>Tabla de Posiciones</h2>
+            <div class="grid-two" style="gap: 1rem; margin-top: 1rem;">
+                <div class="feature-card card-mint">
+                    <strong>1. Leo</strong>
+                    <p>Guardián Supremo</p>
+                    <span class="tag">1500 pts</span>
+                </div>
+                <div class="feature-card card-peach">
+                    <strong>2. Maya</strong>
+                    <p>Maestra de Raíces</p>
+                    <span class="tag">1200 pts</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="page-footer">
+        <p>Real Forest • Conectando la tecnología con la naturaleza</p>
+    </footer>
+    <script type="module" src="js/script.js" defer></script>
 </body>
 </html>
