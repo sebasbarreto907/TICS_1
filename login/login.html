@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="/login/login.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Login</title>
+</head>
+<body>
+    <div class="inicio">
+        <a href="../index.html" id="inicio" class="botones">Inicio</a>
+    </div>
+    <form id="login">
+        <img src="/imagenes/login.png" alt="usuario">
+        <label for="username">Usuario</label>
+        <input type="text" id="username" placeholder="Tu usuario" required>
+        <label for="password">Contraseña</label>
+        <input type="password" id="password" placeholder="Contraseña" required>
+        <div class="box-visible">
+            <input type="checkbox" id="visible">
+            <label for="visible">Mostrar Contraseña</label>
+        </div>
+        <button type="submit" id="submit">Iniciar Secion</button>
+        <div>
+            <p class="pe" >¿No tienes cuenta aun?</p>
+            <a href="/registro/registro.html" id="registro" class="registro">Registrarse</a>
+        </div>
+    </form>
+</body>
+<script src="/login/login.js"></script> 
+</html>

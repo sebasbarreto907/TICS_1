@@ -1,0 +1,194 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+
+body{
+    background-image: url("/imagenes/fondo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    width: 100%;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    height: 4vh;
+}
+
+.inicio{
+    line-height: 1.6;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgba(115, 124, 199, 0.856);
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    color: rgb(61, 134, 86);
+    text-decoration: none;
+    align-self: center;
+    margin-bottom: 20px;
+    transform: translate(-5px);
+}
+
+form{
+    width: 400px;
+    height: auto;
+    padding: 35px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 4px 10px 10px  rgb(80, 173, 165);
+    gap: 6px;
+}
+
+form img{
+    width: 110px;
+    height: 100px;
+    padding: 10px;
+}
+
+form input[type = "text"], input[type = "password"]{
+    outline: 0;
+    border: 1px solid rgb(149, 180, 103);
+    width: 80%;
+    padding: 12px;
+    font-size: 1.1rem;
+}
+
+form label{
+    font-weight: 500;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.box-visible{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+form button{
+    outline: 0;
+    border: 8px;
+    background-color: rgb(187, 243, 104);
+    border-radius: 20px;
+    cursor: pointer;
+    width: 80%;
+    padding: 12px;
+    font-size: 1.1rem;
+    transition: all .3s ease-in-out;
+    text-align: center;
+    color: rgb(102, 92, 92);
+    font-weight: 500;
+}
+
+form button:hover{
+    opacity: .75;
+}
+
+.registro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+a.registro {
+    padding: 8px 20px;
+    border-radius: 20px;
+    background-color: cyan;
+    color: rgb(61, 61, 61);
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+a.registro:hover {
+    opacity: 0.75;
+}
+
+.pe{
+    color: black;
+}
+
+@media (max-width: 480px) {
+    body {
+        justify-content: flex-start;
+        padding-top: 20px;
+    }
+
+    .inicio {
+        margin-bottom: 10px;
+    }
+
+    form {
+        width: 90%;        /* ocupa casi toda la pantalla */
+        padding: 20px 0;
+        gap: 6px;
+    }
+
+    form img {
+        width: 80px;
+        height: 80px;
+    }
+
+    form label {
+        font-size: 1rem;
+    }
+
+    form input[type="text"], 
+    form input[type="password"] {
+        width: 90%;
+        padding: 12px;
+        font-size: 1rem;
+    }
+
+    form button {
+        width: 90%;
+        padding: 12px;
+        font-size: 1rem;
+    }
+
+    a.registro {
+        padding: 10px 30px;
+        font-size: 1rem;
+    }
+@media (max-width: 480px) {
+    html, body {
+        overflow: hidden;      /* sin scroll */
+        height: 100%;
+        width: 100%;
+    }
+
+    body {
+        justify-content: flex-start;
+        padding: 10px;
+        gap: 40px;
+    }
+
+    .inicio {
+        margin-bottom: 0;             /* elimina el margen extra */
+    }
+
+    form {
+        width: 90%;
+        max-height: 95vh;      /* no supera la altura de la pantalla */
+        overflow-y: auto;      /* si el contenido es muy largo, scroll solo dentro del form */
+        padding: 15px 0;
+        gap: 4px;
+    }
+}
+}
